@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@600;700&family=STIX+Two+Text:wght@400;500;600;700&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "STIX Two Text", serif;
+  height: 100vh;
+  display: grid;
+
+  place-content: center;
+}
+
+#cards-container {
+  margin: auto auto;
+  display: flex;
+  width: 90%;
+  overflow-x: scroll;
+  padding-block: 2.5rem;
+  padding-left: 2rem;
+  background-color: #262626;
+  color: white;
+  position: relative;
+}
+
+.card {
+  height: 280px;
+  width: 280px;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(85deg, #434343, #262626);
+  border-radius: 16px;
+  box-shadow: -3rem 0 3rem -2rem #000;
+  padding: 1.5rem 2.5rem 1.5rem 1rem;
+  position: relative;
+  transition: 0.2s ease-out;
+}
+
+.card:hover {
+  transform: translateY(-1.5rem) rotate(5deg);
+}
+
+.card:hover ~ .card {
+  transform: translateX(80px);
+}
+
+.card:not(:first-child) {
+  margin-left: -80px;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  font-family: "Heebo", sans-serif;
+  position: absolute;
+}
+
+.date-time {
+  color: #777;
+  font-size: 1rem;
+  font-family: "STIX Two Text", serif;
+}
+
+.date-time .article-text {
+  font-weight: 500;
+  color: white;
+}
+
+.card-header h2 {
+  line-height: 1.5rem;
+  cursor: pointer;
+}
+
+.card-header h2:hover {
+  opacity: 0.66;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  color: #ff7a18;
+  gap: 0rem 1rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.tag:hover {
+  opacity: 0.66;
+}
+
+.card-author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  bottom: 1rem;
+}
+
+.author {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.author:hover {
+  opacity: 0.66;
+}
+
+.avatar {
+  display: inline-block;
+}
+
+.card-author img {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.card-author img:hover {
+  opacity: 0.66;
+}
