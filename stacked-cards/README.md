@@ -9,15 +9,15 @@ Based on Learnings from Fireship's [article](https://fireship.io/lessons/css-car
 ### CSS-Tricks
 
 Normal
-![Normal](/images/o1.jpg)
+![Normal](images/o1.jpg)
 
 On Hover
-![On Hover](/images/o2.jpg)
+![On Hover](images/o2.jpg)
 
 ### Recreation
 
 Normal
-![Normal](/images/m1.jpg)
+![Normal](images/m1.jpg)
 
 On Hover
 ![On Hover](images/m2.jpg)
